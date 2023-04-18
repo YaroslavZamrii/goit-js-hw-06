@@ -4,7 +4,7 @@ inputEl.addEventListener("blur", onInputBlur);
 
 function onInputBlur(event) {
   if (
-    event.currentTarget.value.length ===
+    event.currentTarget.value.trim().length ===
     Number(inputEl.getAttribute("data-length"))
   ) {
     {
